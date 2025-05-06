@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Light Beyond - Restoring hope, dignity, and purpose for those facing mental health struggles, addiction, and despair.">
+    <title>The Light Beyond - Hope and Renewal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="The Light Beyond Logo - A person reaching for a star with a sunrise and waves">
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#donate" class="donate-btn">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>The Light Beyond</h1>
+            <p>Restoring hope, dignity, and purpose in the lives of those facing mental health struggles, addiction, and deep despair—through compassion, community, and the belief that even the darkest night will end in dawn.</p>
+            <a href="#services" class="cta-btn">Discover Our Services</a>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Mental Health Support</h3>
+                    <p>Compassionate counseling and therapy to help you navigate mental health challenges.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Expression Therapies</h3>
+                    <p>Healing through writing, art, and music to express and process emotions.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Narrative Therapy & Identity Rebuilding</h3>
+                    <p>Reframe your story and rebuild a positive sense of self.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Strength-Based Coaching</h3>
+                    <p>Discover your strengths, set goals, and reintegrate with purpose and life skills.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog">
+            <h2>Inspirational Blog</h2>
+            <div class="blog-teaser">
+                <div class="blog-card">
+                    <h3>Quote of the Day</h3>
+                    <p>"The sun will rise, and we will try again." – Unknown</p>
+                    <a href="#blog" class="read-more">Read More</a>
+                </div>
+                <div class="blog-card">
+                    <h3>Finding Light in Darkness</h3>
+                    <p>A story of renewal through the power of community and self-discovery.</p>
+                    <a href="#blog" class="read-more">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:light.beyond@aol.com">light.beyond@aol.com</a></p>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required aria-required="true">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required aria-required="true">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required aria-required="true"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section id="donate">
+            <h2>Support Our Mission</h2>
+            <p>Your donation helps us bring light to those in need. Every contribution counts.</p>
+            <a href="https://www.paypal.com/donate" target="_blank" class="donate-btn">Donate Now</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 The Light Beyond. All rights reserved.</p>
+        <p>Email: <a href="mailto:light.beyond@aol.com">light.beyond@aol.com</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
