@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif;
+    line-height: 1.6;
+    color: #1A3C5A;
+    background: #F5E5C0;
+}
+
+header {
+    background: #1A3C5A;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #F5C518;
+}
+
+.donate-btn {
+    background: #F5C518;
+    color: #1A3C5A !important;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.donate-btn:hover {
+    background: #E5B508;
+    color: #1A3C5A !important;
+}
+
+.hero {
+    background: linear-gradient(rgba(245, 229, 192, 0.8), rgba(245, 229, 192, 0.8)), url('https://via.placeholder.com/1200x600.png?text=Sunrise+Background');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 5rem 2rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    color: #1A3C5A;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.cta-btn {
+    display: inline-block;
+    background: #F5C518;
+    color: #1A3C5A;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #E5B508;
+}
+
+section {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #1A3C5A;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #1A3C5A;
+    margin-bottom: 1rem;
+}
+
+.blog-teaser {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.blog-card {
+    background: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+}
+
+.blog-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    color: #1A3C5A;
+    margin-bottom: 0.5rem;
+}
+
+.read-more {
+    display: inline-block;
+    color: #F5C518;
+    text-decoration: none;
+    margin-top: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #1A3C5A;
+}
+
+input, textarea {
+    padding: 0.75rem;
+    border: 1px solid #1A3C5A;
+    border-radius: 5px;
+    font-family: 'Lora', serif;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    background: #F5C518;
+    color: #1A3C5A;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #E5B508;
+}
+
+#donate {
+    text-align: center;
+    background: #1A3C5A;
+    color: #FFFFFF;
+    padding: 2rem;
+}
+
+#donate h2 {
+    color: #FFFFFF;
+}
+
+#donate p {
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+}
+
+footer {
+    background: #1A3C5A;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer a {
+    color: #F5C518;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Accessibility */
+:focus {
+    outline: 2px solid #F5C518;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
